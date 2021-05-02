@@ -2,6 +2,8 @@
 :root {
     --yellow:rgb(255, 225, 0);
     --black:rgb(26, 27, 27);
+    --main_background:rgb(243, 241, 235);
+    --main_font:'Ubuntu', sans-serif;
 }
 
 * {
@@ -57,7 +59,7 @@
     height:100%;
     width:100%;
     background-color:var(--black);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--main_font);
 }
 
 .navbar {
@@ -67,7 +69,7 @@
     position:relative;
     width:100%;
     height:40px;
-    border-right: solid 2px var(--yellow);
+    border-right: solid 4px var(--yellow);
 }
 
 .navbar p {
@@ -96,6 +98,7 @@
 }
 
 .main {
+    background-color:var(--main_background);
     width:calc(100% - 260px);
     height:100%;
     margin-left:260px;
@@ -132,7 +135,7 @@
     justify-content: center;
     grid-template-rows:3fr 2fr 1fr;
     color:rgb(214, 212, 212);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--main_font);
 }
 
 .hero_card h1 {
@@ -164,6 +167,63 @@
     padding:50px 20px 40px 40px;
 }
 
+input {
+    border:none;
+    background-color: var(--main_background);
+}
+textarea {
+    border:none;
+    padding:15px 10px;
+    background-color: var(--main_background);
+}
+
+.contact_form_container {
+    font-family: var(--main_font);
+    position:relative;
+    width:50%;
+    margin:auto;
+    padding-top:40px;
+}
+
+.form_container {
+    margin-top:30px;
+}
+.two_column_form {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-rule: black;
+    column-width: 1px;
+    position:relative;
+    width:100%;
+    margin-bottom:10px;
+    border:solid 1px black;
+}
+.one_column_form {
+    display:grid;
+    grid-template-columns: 1fr;
+    position:relative;
+    width:100%;
+    margin-bottom:10px;
+    border:solid 1px black;
+}
+.second_row_form {
+    border-left:solid 1px black;
+}
+.one_column_name_form {
+    display:grid;
+    grid-template-columns: 1fr;
+    position:relative;
+    width:100%;
+    border-left:solid 1px black;
+    border-right:solid 1px black;
+    border-top:solid 1px black;
+    padding:15px 10px;
+    text-transform:uppercase;
+}
+.contact_input_form {
+    padding:15px 10px;
+}
+
 @media only screen and (max-width: 900px) {
     .side_bar {
         position:relative;
@@ -187,5 +247,10 @@
     }
     .hero_card h1 {
         font-size:30px;
+    }
+
+
+    .contact_form_container {
+        width:80%;
     }
 }
