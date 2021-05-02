@@ -11,6 +11,9 @@
     padding:0;
     box-sizing:border-box;
 }
+.center {
+    text-align: center;
+}
 /*
 .container {
     width:100vw;
@@ -170,6 +173,10 @@
 input {
     border:none;
     background-color: var(--main_background);
+    
+}
+input:focus, textarea:focus {
+    outline:none;
 }
 textarea {
     border:none;
@@ -206,6 +213,7 @@ textarea {
     margin-bottom:10px;
     border:solid 1px black;
 }
+
 .second_row_form {
     border-left:solid 1px black;
 }
@@ -252,5 +260,15 @@ textarea {
 
     .contact_form_container {
         width:80%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .first_row_form {
+        width:150px;
+    }
+    .second_row_form {
+        border-left:solid 1px black;
+        width:150px;
     }
 }
