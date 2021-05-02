@@ -265,10 +265,10 @@ textarea {
 
 @media only screen and (max-width:500px) {
     .first_row_form {
-        width:150px;
+        width:100px;
     }
     .second_row_form {
         border-left:solid 1px black;
-        width:150px;
+        width:100px;
     }
 }
