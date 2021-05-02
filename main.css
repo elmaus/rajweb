@@ -27,6 +27,14 @@
     margin:auto;
 }
 
+.toggle_menu {
+    display:none;
+    position:relative;
+    width:90px;
+    height:90px;
+    background-color:red;
+}
+
 .side_bar {
     width:260px;
     height:100vh;
@@ -94,35 +102,41 @@
 }
 
 .hero {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     position:relative;
     width:100%;
     height:500px;
     background-image: url(images/hero_hse.jpg), radial-gradient(rgb(71, 70, 70), black);
+    background-position: right;
     background-size:cover;
     background-blend-mode: overlay;
 }
-
 .hero_email {
-        display:flex;
-        position:absolute;
-        align-items:center;
-        top:30px;
-        right:50px;
-        color:white;
-}
-.hero_card {
+    position:absolute;
     display:flex;
-    flex-direction:column;
+    align-items:center;
+    top:20px;
+    right:30px;
+    color:white;
+    padding:30px 40px 20px 30px;
+}
+
+.hero_card {
+    position:relative;
+    align-items:center;
+    width:80%;
+    height:50%;
+    display:grid;
+    justify-content: center;
+    grid-template-rows:3fr 2fr 1fr;
     color:rgb(214, 212, 212);
-    max-width: 900px;
-    padding-left:120px;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .hero_card h1 {
-    font-size:50px;
-    padding-top:100px;
-    padding-bottom:30px;
+    font-size:3vw;
 }
 .hero_card p {
     font-size:15px;
@@ -133,7 +147,6 @@
     text-align: center;
     padding:10px 15px;
     text-decoration:none;
-    margin-top:50px;
     position:relative;
     background-color:var(--yellow);
     width:120px;
@@ -145,4 +158,34 @@
     align-self: center;
     text-transform:uppercase;
     font-weight: 700;
+}
+
+.content {
+    padding:50px 20px 40px 40px;
+}
+
+@media only screen and (max-width: 900px) {
+    .side_bar {
+        position:relative;
+        width:100vw;
+        height:90px;
+        display:flex;
+    }
+    .logo {
+        height:90px;
+        width:100vw;
+    }
+    .toggle_menu {
+        display:block;
+    }
+    .nav {
+        display:none;
+    }
+    .main {
+        width: 100vw;
+        margin-left:0;
+    }
+    .hero_card h1 {
+        font-size:30px;
+    }
 }
