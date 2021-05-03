@@ -32,26 +32,27 @@
                 <div class="form_container">
                     <p class="one_column_name_form">tell us your name *</p>
                     <div class="two_column_form">
-                        <input class="contact_input_form first_row_form" type="text" placeholder="First Name">
-                        <input class="contact_input_form second_row_form" type="text" placeholder="Last Name">
+                        <input class="contact_input_form first_row_form" id="name" type="text" name="fistname" placeholder="First Name">
+                        <input class="contact_input_form second_row_form" type="text" name="lastname" placeholder="Last Name">
                     </div>
                     <p class="one_column_name_form">Enter Your Email *</p>
                     <div class="one_column_form">
-                        <input class="contact_input_form" type="text" placeholder="Eg. example@email.com">
+                        <input class="contact_input_form" type="text" name="email" placeholder="Eg. example@email.com">
                     </div>
                     <p class="one_column_name_form">Enter phone number</p>
                     <div class="one_column_form">
-                        <input class="contact_input_form" type="text" placeholder="Eg. +1800 000000">
+                        <input class="contact_input_form" type="text" name="phone" placeholder="Eg. +1800 000000">
                     </div>
                     <p class="one_column_name_form">message *</p>
                     <div class="one_column_form">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="write ua a message"></textarea>
+                        <textarea name="" id="message" cols="30" rows="10" name="message" placeholder="write ua a message"></textarea>
                     </div>
-                    <input type="submit">
+                    <button>Send Message</button>
                     
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="email.js"></script>
 </body>
 </html>
