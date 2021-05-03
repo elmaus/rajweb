@@ -10,7 +10,7 @@ function sendEmail() {
     
     Email.send({
         Host:"smtp.gmail.com",
-        Username:"elmauscamus@yahoo.com", 
+        Username:"elmauscamus@gmail.com", 
         Password:"1-Love-Codin6",
         To:"fortempoweb@gmail.com",
         From:"samuel-camus.com",
