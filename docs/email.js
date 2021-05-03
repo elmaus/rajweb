@@ -2,7 +2,7 @@ const btn = document.querySelector('button');
 
 
 function sendEmail() {
-    let name = "Name: ${document.getElementById("name").value}\n";
+    let name = "Name: ${document.getElementById("name").value} ";
     let surname = "Surname : ${document.getElementById("surname").value}\n";
     let email = "Email: ${document.getElementById("email").value}";
     let number = "Phone Number: ${document.getElementById("number").value}\n";
