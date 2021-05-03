@@ -15,7 +15,7 @@ function sendEmail() {
         To:"fortempoweb@gmail.com",
         From:"samuel-camus.com",
         Subject:"Testing Sending Email", 
-        Body: name + surname + email + number + message
+        Body: name + surname + email + number + message;
     }) 
 
 }
