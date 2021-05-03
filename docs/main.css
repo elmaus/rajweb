@@ -231,6 +231,13 @@ textarea {
 .contact_input_form {
     padding:15px 10px;
 }
+.thankYou {
+    position:absolute;
+    margin:60px auto;
+    padding:40px 30px;
+    max-width:600px;
+    background-color:rgba(2,2,2,.5);
+} 
 
 @media only screen and (max-width: 900px) {
     .side_bar {
