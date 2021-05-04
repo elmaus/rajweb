@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" stylesheet='text/css' href="main.css">
     <title>Home</title>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -32,24 +32,25 @@
             
             <div class="contact_form_container">
                 <h1 class="center">Send Us A Message</h1>
-                <form class="form_container">
+                <form class="form_container" action="https://formsubmit.co/elmauscamus@gmail.com" method="POST">
                     <p class="one_column_name_form">tell us your name *</p>
-                 
+                    <input type="hidden" name="_next" value="https://samuel-camus.com/index.html">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="two_column_form">
-                        <input class="contact_input_form first_row_form" id="name" type="text" name="fistname" placeholder="First Name">
-                        <input class="contact_input_form second_row_form" type="text" id="surname" placeholder="Last Name">
+                        <input class="contact_input_form first_row_form" name="name" type="text" name="fistname" placeholder="First Name" required>
+                        <input class="contact_input_form second_row_form" type="text" name="surname" placeholder="Last Name" required>
                     </div>
                     <p class="one_column_name_form">Enter Your Email *</p>
                     <div class="one_column_form">
-                        <input class="contact_input_form" type="text" id="email" placeholder="Eg. example@email.com">
+                        <input class="contact_input_form" type="email" name="email" placeholder="Eg. example@email.com" required>
                     </div>
                     <p class="one_column_name_form">Enter phone number</p>
                     <div class="one_column_form">
-                        <input class="contact_input_form" type="text" id="number" placeholder="Eg. +1800 000000">
+                        <input class="contact_input_form" type="number" name="number" placeholder="Eg. +1800 000000">
                     </div>
                     <p class="one_column_name_form">message *</p>
                     <div class="one_column_form">
-                        <textarea name="" id="message" cols="30" rows="10" name="message" placeholder="write ua a message"></textarea>
+                        <textarea cols="30" rows="10" name="message" placeholder="write ua a message" required></textarea>
                     </div>
                     <button>Send Message</button>
                     
