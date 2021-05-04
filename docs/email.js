@@ -9,9 +9,6 @@ function sendEmail() {
     let message = "Message:\n ${document.getElementById("name")}";
     
     Email.send({
-        Host:"smtp.gmail.com",
-        Username:"elmauscamus@gmail.com",
-        Password:"1-Love-Codin6",
         To:"fortempoweb@gmail.com",
         From:"elmauscamus@gmail.com",
         Subject:"Testing Sending Email", 
