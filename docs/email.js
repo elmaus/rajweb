@@ -9,11 +9,11 @@ function sendEmail() {
     let message = "Message:\n ${document.getElementById("name")}";
     
     Email.send({
-        
-        
-        SecurityToken:"5096f11a-ee33-4fc3-b2d6-f75dfc358c2",
+        Host:"smtp.gmail.com",
+        Username:"elmauscamus@gmail.com",
+        Password:"1-Love-Codin6",
         To:"fortempoweb@gmail.com",
-        From:"samuel-camus.com",
+        From:"elmauscamus@gmail.com",
         Subject:"Testing Sending Email", 
         Body: name + surname + email + number + message;
     }) 
